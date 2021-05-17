@@ -1,0 +1,22 @@
+{
+  "name": "three-js",
+  "version": "1.0.0",
+  "description": "A three.js test folder",
+  "main": "script4.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "NIDDAM Benjamin",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benja971/Three-js.git"
+  },
+  "bugs": {
+    "url": "https://github.com/benja971/Three-js/issues"
+  },
+  "homepage": "https://github.com/benja971/Three-js#readme",
+  "dependencies": {
+    "three": "^0.128.0"
+  }
+}
