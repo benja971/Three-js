@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/benja971/Three-js#readme",
   "dependencies": {
-    "three": "^0.128.0"
+    "three": "^0.128.0",
+    "three-gltf-loader": "^1.111.0"
   }
 }

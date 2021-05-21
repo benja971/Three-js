@@ -24,7 +24,7 @@ points.push(new THREE.Vector3(0, 50, -10));
 points.push(new THREE.Vector3(-10, 50, 0));
 points.push(new THREE.Vector3(0, 60, 0));
 points.push(new THREE.Vector3(10, 50, 0));
-points.push(new THREE.Vector3(0, 0, 0));
+// points.push(new THREE.Vector3(0, 0, 0));
 
 const geometry = new THREE.BufferGeometry().setFromPoints(points);
 
