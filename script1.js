@@ -15,35 +15,34 @@ const geometry = new THREE.BoxGeometry();
 //Création du matérieau de remplissage de la forme
 const material1 = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 const material2 = new THREE.LineBasicMaterial({ color: 0xff0000 });
+const material3 = new THREE.LineBasicMaterial({ color: 0xff0000 });
 
 const points = [];
-points.push(new THREE.Vector3(-1, -1, -0.5));
-points.push(new THREE.Vector3(1, -1, -0.5));
-points.push(new THREE.Vector3(1, 1, -0.5));
-points.push(new THREE.Vector3(-1, 1, -0.5));
-points.push(new THREE.Vector3(-1, -1, -0.5));
-points.push(new THREE.Vector3(-1, -1, 0.5));
-points.push(new THREE.Vector3(1, -1, 0.5));
-points.push(new THREE.Vector3(1, 1, 0.5));
-points.push(new THREE.Vector3(-1, 1, 0.5));
-points.push(new THREE.Vector3(-1, -1, 0.5));
-points.push(new THREE.Vector3(-1, 1, 0.5));
-points.push(new THREE.Vector3(-1, 1, -0.5));
-points.push(new THREE.Vector3(1, 1, -0.5));
-points.push(new THREE.Vector3(1, 1, 0.5));
-points.push(new THREE.Vector3(1, -1, 0.5));
-points.push(new THREE.Vector3(1, -1, -0.5));
+points.push(new THREE.Vector3(-1, -1, -1));
+points.push(new THREE.Vector3(1, -1, -1));
+points.push(new THREE.Vector3(1, 1, -1));
+points.push(new THREE.Vector3(-1, 1, -1));
+points.push(new THREE.Vector3(-1, -1, -1));
+points.push(new THREE.Vector3(-1, -1, 1));
+points.push(new THREE.Vector3(1, -1, 1));
+points.push(new THREE.Vector3(1, 1, 1));
+points.push(new THREE.Vector3(-1, 1, 1));
+points.push(new THREE.Vector3(-1, -1, 1));
+points.push(new THREE.Vector3(-1, 1, 1));
+points.push(new THREE.Vector3(-1, 1, -1));
+points.push(new THREE.Vector3(1, 1, -1));
+points.push(new THREE.Vector3(1, 1, 1));
+points.push(new THREE.Vector3(1, -1, 1));
+points.push(new THREE.Vector3(1, -1, -1));
 
 //Création d'une forme géométrique
 const cube = new THREE.Mesh(geometry, material1);
 const geometry2 = new THREE.BufferGeometry().setFromPoints(points);
-
 const line = new THREE.Line(geometry2, material2);
 
 //Ajout de la forme à la page
 scene.add(cube);
 scene.add(line);
-//Positionement de la caméra
 
 const animate = function () {
     requestAnimationFrame(animate);
